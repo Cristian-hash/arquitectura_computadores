@@ -1,6 +1,6 @@
 import tkinter
 from tkinter import *
-
+from tkinter import filedialog
 #raiz
 raiz= tkinter.Tk()
 raiz.title=("PROYECTO ARQUITECTURA DE COMPUTADORES")
@@ -34,13 +34,6 @@ tituloPrincipal.place(x=400,y=0)
 etiquetaTitulo=Label(miFrame, text="titulo",fg="black",font=("Comic Sans MS",11))
 etiquetaTitulo.place(x=600,y=100)
 
-
-
-
-
-#
-root = Tk()
-
 def test():
     # *Ventana de elección de color
     # color = colorchooser.askcolor(title="Elige un color")
@@ -53,31 +46,15 @@ def test():
     # *Equivale a open("ruta","w")
     # mode -> formato de abrir el archivo
     fichero = filedialog.asksaveasfile(miFrame,title="Guardar un archivo", mode="r+")
-    fichero.place(x=100,y=400)
-
-    
     if fichero is not None:
-        fichero.write("Texto de relleno")
+        fichero.write("Texto de relleno").place(x=20,y=20)
+        #faltaria dimensionarlo
         fichero.close()
-
-
-Button(root, text="Click", command=test).pack()
-
-
-
-
-
-
-
-
-
-
-
-
-
+Button(raiz, text="Click", command=test).pack()
 
 #etiqueta TITULO y Posicion
 #etiqueta = tkinter.Label(raiz,text = "POSTCAST", bg="blue")
 #etiqueta.pack()
 
 raiz.mainloop()
+
