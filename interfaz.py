@@ -19,30 +19,70 @@ miFrame.config(bd=35)
 miFrame.config(relief="sunken")
 miFrame.config(cursor="hand2")
 
-
-
 #aun no sale imagen
 miImagen=PhotoImage(file="icono.png")
-Label(miFrame,image=miImagen).place(x=5,y=5)
+Imagen=miImagen.subsample(4,4)
+Label(miFrame,image=Imagen).place(x=0,y=0)
 
 #------------------------------------------------------------------
 #miImagen=PhotoImage(file="icono.png")
 #miImagen.place(x=200,y=0)
 
+tituloPrincipal=Label(miFrame, text="PROYECTO ARQUITECTURA DE COMPUTADORES",fg="black",font=("Comic Sans MS",16))
+tituloPrincipal.place(x=180,y=50)
 
-tituloPrincipal=Label(miFrame, text="PROYECTO ARQUITECTURA DE COMPUTADORES",fg="black",font=("Comic Sans MS",18))
-tituloPrincipal.place(x=100,y=0)
 
 
-#TITULO
-etiquetaTitulo=Label(miFrame, text="Nombre del Archivo",fg="black",font=("Comic Sans MS",12))
+
+#TODAS LAS ETIQUETAS
+
+etiquetaVozATexto=Label(miFrame, text="1-Voz a texto",fg="black",font=("Comic Sans MS",12))
+etiquetaVozATexto.place(x=20,y=160)
+
+etiquetaBuscarArchivo=Label(miFrame, text="2-Abrir Archivo",fg="black",font=("Comic Sans MS",12))
+etiquetaBuscarArchivo.place(x=20,y=200)
+
+etiquetaOperaciones=Label(miFrame, text="3-Operaciones",fg="black",font=("Comic Sans MS",12))
+etiquetaOperaciones.place(x=20,y=300)
+
+#etiqueta donde salga el nombre del archivo
+etiquetaTitulo=Label(miFrame, text="Titulo del PDF",fg="black",font=("Comic Sans MS",12))
 etiquetaTitulo.place(x=600,y=120)
 
-etiquetaBuscarArchivo=Label(miFrame, text="Abrir Archivo",fg="black",font=("Comic Sans MS",12))
-etiquetaBuscarArchivo.place(x=20,y=160)
-#CAJA DE TEXTO,como comentario
+
+#TODAS LAS CAJAS DE TEXTO
+
+#la mas pequeña
+cajaTextoVozaTexto = Entry(miFrame)
+cajaTextoVozaTexto.place(x=150,y=160)
+
+#CAJA DE TEXTO(la mas grande de la derecha),como comentario
 cajaTexto = tkinter.Text(miFrame)
 cajaTexto.place(x=500,y=150,width=270,height=300)
+
+
+
+#TODOS LAS BOTONES
+
+# BOTON DEL MICRO 
+botonMicro=Button(miFrame,text = 'Grabar !')
+botonMicro.place(x=280,y=160) 
+
+#BOTONES
+
+botonPlay=Button(miFrame,text =     'Play !   ')
+botonPlay.place(x=20,y=330) 
+
+botonEliminar=Button(miFrame,text = 'Eliminar!')
+botonEliminar.place(x=80,y=330) 
+
+botonBuscar=Button(miFrame,text =   'Buscar!  ')
+botonBuscar.place(x=140,y=330) 
+
+botonListar=Button(miFrame,text =   'Listar!  ')
+botonListar.place(x=200,y=330) 
+
+
 
 
 #BOTON ABRIR ARCHIVOS
@@ -62,7 +102,7 @@ def test():
         fichero.write("Texto")
         fichero.close()
 
-Button(miFrame, text="Click", command=test).place(x=180,y=160)
+Button(miFrame, text="Click", command=test).place(x=150,y=200)
 
 raiz.mainloop()
 
