@@ -21,20 +21,45 @@ miFrame.config(cursor="hand2")
 
 
 
+#aun no sale imagen
+miImagen=PhotoImage(file="icono2.png")
+Label(miFrame,image=miImagen).place(x=5,y=5)
+
+#------------------------------------------------------------------
+#miImagen=PhotoImage(file="icono.png")
+#miImagen.place(x=200,y=0)
+
+
 tituloPrincipal=Label(miFrame, text="POTCAST",fg="black",font=("Comic Sans MS",18))
 tituloPrincipal.place(x=400,y=0)
 
-#aun no sale imagen
-#miImagen=PhotoImage(file="icono.png")
-#Label(miFrame,image=miImagen).place(x=5,y=5)
-#--------------------------------------------------------
-#miImagen=PhotoImage(file="icono.png")
-#miImagen.place(x=200,y=0)
-#
-etiquetaTitulo=Label(miFrame, text="titulo",fg="black",font=("Comic Sans MS",11))
-etiquetaTitulo.place(x=600,y=100)
 
-def test():
+#TITULO
+etiquetaTitulo=Label(miFrame, text="titulo",fg="black",font=("Comic Sans MS",12))
+etiquetaTitulo.place(x=600,y=120)
+
+etiquetaBuscarArchivo=Label(miFrame, text="Abrir Archivo",fg="black",font=("Comic Sans MS",12))
+etiquetaBuscarArchivo.place(x=80,y=160)
+#CAJA DE TEXTO,como comentario
+cajaTexto = tkinter.Text(miFrame)
+cajaTexto.place(x=500,y=150,width=270,height=300)
+
+
+#
+#cajaTexto = tkinter.Entry(miFrame)
+#cajaTexto.place(x=500,y=150,width=270,height=300)
+
+
+
+
+#etiqueta TITULO y Posicion
+#etiqueta = tkinter.Label(raiz,text = "POSTCAST", bg="blue")
+#etiqueta.pack()
+raiz.mainloop()
+
+
+
+##def test():
     # *Ventana de elección de color
     # color = colorchooser.askcolor(title="Elige un color")
     # print(color)
@@ -45,16 +70,9 @@ def test():
     # print(fichero)
     # *Equivale a open("ruta","w")
     # mode -> formato de abrir el archivo
-    fichero = filedialog.asksaveasfile(miFrame,title="Guardar un archivo", mode="r+")
-    if fichero is not None:
-        fichero.write("Texto de relleno").place(x=20,y=20)
-        #faltaria dimensionarlo
-        fichero.close()
-Button(raiz, text="Click", command=test).pack()
-
-#etiqueta TITULO y Posicion
-#etiqueta = tkinter.Label(raiz,text = "POSTCAST", bg="blue")
-#etiqueta.pack()
-
-raiz.mainloop()
-
+##   fichero = filedialog.asksaveasfile(miFrame,title="Guardar un archivo", mode="r+")
+##  if fichero is not None:
+##     fichero.write("Texto de relleno").place(x=20,y=20)
+##     #faltaria dimensionarlo
+##    fichero.close()
+##Button(raiz, text="Click", command=test).pack()

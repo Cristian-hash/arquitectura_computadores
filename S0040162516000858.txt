@@ -1,0 +1,11 @@
+Joseph Amankwah-Amoah,
+Competing technologies, competing forces: The rise and fall of the floppy disk, 1971–2010,
+Technological Forecasting and Social Change,
+Volume 107,
+2016,
+Pages 121-129,
+ISSN 0040-1625,
+https://doi.org/10.1016/j.techfore.2016.03.019.
+(https://www.sciencedirect.com/science/article/pii/S0040162516000858)
+Abstract: The study examines the rise and fall of the floppy disk as a common data storage device from 1971 to 2010. The analysis led to the identification of three stages in the rise and fall of the floppy disk, i.e. the “new dawn”, 1971–1990s, the decline stage in the 2000s and then the phase-out period. From the 1970s to the 1990s, the floppy disk gained dominance and became a leading storage device propelled by its superior features and capacity relative to the old-fashioned punch cards and magnetic tape. Yet, by the early 2000s, it was on a path to terminal decline precipitated by the emergence of competing storage devices and limitations of the floppy disk. The study highlights the effects of the technological revolution which ultimately led to the floppy disk being superseded by more reliable, high-capacity and robust storage devices such as CD-ROM, DVD/Blu-Ray disks, USB memory stick and cloud computing. The study charts the transitions from the floppy disk to CD-ROM and then to cloud computing and the underlying drivers. The study led to the identification of multiple competing technologies and competing forces punctuated by events which, over time, helped to precipitate the decline. The implication for theory and practice is identified and examined.
+Keywords: Technological obsolescence; Innovation; Floppy disk; Decline; History; Strategy
