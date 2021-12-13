@@ -65,21 +65,33 @@ cajaTexto.place(x=500,y=150,width=270,height=300)
 #TODOS LAS BOTONES
 
 # BOTON DEL MICRO 
-botonMicro=Button(miFrame,text = 'Grabar !')
+imagenMicro=PhotoImage(file="microfono.png")
+microfono=imagenMicro.subsample(15,15)
+botonMicro=Button(miFrame,text = 'Grabar !',image=microfono)
 botonMicro.place(x=280,y=160) 
 
 #BOTONES
 
-botonPlay=Button(miFrame,text =     'Play !   ')
+imagenPlay=PhotoImage(file="boton play.png")
+play=imagenPlay.subsample(10,10)
+botonPlay=Button(miFrame,text =     'Play !   ',image=play)
 botonPlay.place(x=20,y=330) 
 
-botonEliminar=Button(miFrame,text = 'Eliminar!')
+
+imagenEliminar=PhotoImage(file="eliminar.png")
+eliminar=imagenEliminar.subsample(10,10)
+botonEliminar=Button(miFrame,text = 'Eliminar!',image=eliminar)
 botonEliminar.place(x=80,y=330) 
 
-botonBuscar=Button(miFrame,text =   'Buscar!  ')
+imagenBuscar=PhotoImage(file="boton stop.png")
+buscar=imagenBuscar.subsample(10,10)
+botonBuscar=Button(miFrame,text =   'Buscar!  ',image=buscar)
 botonBuscar.place(x=140,y=330) 
 
-botonListar=Button(miFrame,text =   'Listar!  ')
+
+imagenListar=PhotoImage(file="limpiar.png")
+listar=imagenListar.subsample(10,10)
+botonListar=Button(miFrame,text =   'Listar!  ',image=listar)
 botonListar.place(x=200,y=330) 
 
 
